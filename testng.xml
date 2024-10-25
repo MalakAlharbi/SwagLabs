@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="Login to SwagLabs with valid credintials on Chrome">
-        <parameter name="browsername" value=""/>
-        <classes>
-            <class name="testcases.TC01_Login">
-                <methods>
-                    <include name="loginWithValidUserNameAndPassword"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true" name="Login to SwagLabs with valid credintials on Firefox">
-        <parameter name="browsername" value="edge"/>
-        <classes>
-            <class name="testcases.TC01_Login">
-                <methods>
-                    <include name="loginWithValidUserNameAndPassword"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+   <suite-files>
+       <suite-file path="Sprint-1_Chrome.xml"/>
+       <suite-file path="Sprint-1_Edge.xml"/>
+   </suite-files>
 </suite>

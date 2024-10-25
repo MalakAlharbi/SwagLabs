@@ -13,7 +13,6 @@ import java.util.Map;
 
 public class DriverFactory {
     public static WebDriver getNewInstance(String browserName) {
-
         switch (browserName.toLowerCase()) {
             case "chrome-headless":
                 ChromeOptions chromeOptions = new ChromeOptions();
@@ -53,11 +52,9 @@ public class DriverFactory {
                 chromeOptions.addArguments("--disable-notifications");
                 chromeOptions.setExperimentalOption("prefs", prefs);
                 chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
                 chromeOptions.merge(capabilities);
-
                 return new ChromeDriver(chromeOptions);
         }
     }

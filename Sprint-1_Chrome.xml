@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint-1 using Chrome">
+    <test verbose="2" preserve-order="true" name="Login to SwagLabs with valid credintials on Chrome">
+        <parameter name="browsername" value=""/>
+        <classes>
+            <class name="testcases.TC01_Login">
+                <methods>
+                    <include name="loginWithValidUserNameAndPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.TC02_AddRandomProducts">
+                <methods>
+                    <include name="selectRandomProducts"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_ViewCart">
+                <methods>
+                    <include name="clickOnCheckOut"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_CheckOutSteps">
+                <methods>
+                    <include name="checkOutSteps"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
