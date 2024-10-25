@@ -40,7 +40,7 @@ To set up the SwagLabs application locally, follow these steps:
 * User Guide: Refer to the User Guide for detailed information on how to use the SwagLabs application.
 
 ### Local testing execution example
-![Local testing execution example](execution.mp4)
+![Local testing execution example] (execution.mp4)
 
 ## Contributing
 * We welcome contributions from the community. To contribute to SwagLabs, follow these steps:
